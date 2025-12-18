@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-df = pd.read_csv("/content/drive/MyDrive/spam.csv", encoding="latin-1")
+df = pd.read_csv("spam.csv", encoding="latin-1")
 df = df[['v1', 'v2']]
 df.columns = ['label', 'message']
 
